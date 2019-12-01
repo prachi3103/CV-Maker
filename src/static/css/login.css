@@ -1,0 +1,45 @@
+.login{
+	padding-left: 37%;
+	font-size: 30px;
+
+}
+body{
+	background-color:gray;
+}
+
+.login-header h1{
+	color:white;
+	height: 100%;
+	display: table-cell;
+	vertical-align:right;
+	font-size: 30px;
+}
+h2{
+	color: white;
+	font-size: 50px;
+}
+.login-image{
+	height: 15%;
+	width: 30%;
+}
+button{
+	font-size:20px;
+	width:400px;
+	height:30px;
+	border-radius: 4px;
+
+}
+input[type=submit]{
+	font-size:20px;
+	width:140px;
+	height:30px;
+
+}
+input[type=text]{
+	width:40%;
+	height: 30px;
+}
+input[type=password]{
+	width:41%;
+	height: 30px;
+}

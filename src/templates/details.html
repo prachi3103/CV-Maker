@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>details</title>
+	<link href="/static/css/details.css" type="text/css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/cs/bootstrap.min.css">
+</head>
+<body>
+	<form method='POST' >
+	{% csrf_token %}
+	<div class="container">
+<br>
+	<div class="whole-page">
+		<div class="whole-page1">
+	<div class="form-group row">
+	<label class="col-sm-1 col-form-label"></label>
+	<div class="col-sm-4">
+		<h1 class="start" >Enter Details</h1>
+	</div>
+	</div>
+</div>
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Full Name:</label>
+	<div class="col-sm-4">
+		{{ form.fullname}}	
+	</div>
+	</div>
+	<br>
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Contact No:</label>
+	<div class="col-sm-4">
+		{{ form.contact}}	
+	</div>
+	</div>
+	<br>
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Email Id:</label>
+	<div class="col-sm-4">
+		{{ form.emailid}}	
+	</div>
+	</div>
+	<br>
+
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Address:</label>
+	<div class="col-sm-4">
+		
+		{{ form.address}}	
+	</div>
+	</div>
+	<br>
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Career Objectives:</label>
+	<div class="col-sm-4">
+		{{ form.careerobj}}	
+	</div>
+	</div>
+	<br>			
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Qualification:</label>
+	<div class="col-sm-4">
+		{{ form.qualification}}	
+	</div>
+	</div>
+	<br>			
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Education:</label>
+	<div class="col-sm-4">
+		{{ form.education}}	
+	</div>
+	</div>
+	<br>			
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Interest:</label>
+	<div class="col-sm-4">
+		{{ form.interest}}	
+	</div>
+	</div>
+	<br>			
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Extraskills:</label>
+	<div class="col-sm-4">
+		{{ form.Extraskills}}	
+	</div>
+	</div>
+	<br>			
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">References:</label>
+	<div class="col-sm-4">
+		{{ form.references}}	
+	</div>
+	</div>
+</div>
+	<br>	
+<div class="sub-buttons">
+<div class="sbuttons">					
+<a href="http://127.0.0.1:8000/">
+	<div class="design">
+<input type='submit' value='Save'/>
+</a>
+</div>
+</div>
+<div class="display">
+	<big class="text-muted">CV Created!To See Your CV Go To  <a class="ml-2" href="http://127.0.0.1:8000/cv/">Display</a></big>
+		</div>
+</div>
+</div>
+</div>
+</form>
+
+</body>
+</html>

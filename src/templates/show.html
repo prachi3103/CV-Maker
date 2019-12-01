@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>cv</title>
+	
+	<link href="/static/css/show.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/cs/bootstrap.min.css">
+</head>
+<body>
+	<div class="fullpage">
+{% for Detail in details %}
+	<table>
+	
+	<tr>
+		<tr>
+	<div class="form-group row">
+	<!--<label class="col-sm-2 col-form-label">Full Name</label>-->
+
+	<label class="col-sm-2 col-form-label">{{Detail.fullname}}</label>
+	<td>
+	<div class="col-sm-4">
+
+		<!--<tr><div class="high">{{Detail.fullname}}</div></tr>-->
+	</div>
+	</td>
+</div>
+</tr>
+<tr>
+	<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Contact No: {{Detail.contact}}</label>
+	<td>
+	<div class="col-sm-4">
+	</div>
+</td>
+</div>
+	</tr>
+
+		<tr>
+			<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Email Id: {{Detail.emailid}}</label>
+	<tr>
+	<div class="col-sm-4">
+		</div>
+		</tr>
+		</div>
+		</tr>
+
+
+		<tr>
+			<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Address: {{Detail.address}}</label>
+	<tr>
+	<div class="col-sm-4">
+		</div>
+		</tr>
+		</div>
+	</tr>
+	<br>
+	<tr>
+
+			<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Career Objectives</label>
+	<hr class="bighr" align="left">
+	<tr>
+	<div class="col-sm-4">
+		<tr>{{Detail.careerobj}}</tr>
+		</div>
+		</tr>
+		</div>
+	</tr>
+	<br>
+	<br>
+		<tr>
+			<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Qualifications</label>
+	<hr class="bighr" align="left">
+	<tr>
+	<div class="col-sm-4">
+		<tr>{{Detail.qualification}}</tr>
+		</div>
+		</tr>
+</div>
+</tr>
+<br>
+<br>
+		<tr>
+			<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Education</label>
+	<hr class="bighr" align="left">
+	<tr>
+	<div class="col-sm-4">
+		<tr>{{Detail.education}}</tr>
+	</div>
+		</tr>
+	</div>
+</tr>
+<br>
+<br>
+		<tr>
+			<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Interest</label>
+	<hr class="bighr" align="left">
+	<tr>
+	<div class="col-sm-4">
+		<tr>{{Detail.interest}}</tr>
+	</div>
+		</tr>
+	</div>
+</tr>
+<br>
+<br>
+		<tr>
+			<div class="form-group row">
+	<label class="col-sm-2 col-form-label">References</label>
+	<hr class="bighr" align="left">
+	<tr>
+	<div class="col-sm-4">
+		<tr>{{Detail.references}}</tr>
+	</div>
+		</tr>
+	</div>
+</tr>
+<br>
+<br>
+		<tr>
+			<div class="form-group row">
+	<label class="col-sm-2 col-form-label">Extra Skills</label>
+	<hr class="bighr" align="left">
+	<tr>
+	<div class="col-sm-4">
+		<tr>{{Detail.Extraskills}}</tr>
+	</div>
+		</tr>
+	</div>
+	</tr>
+	<br>
+	<br>
+	<hr>
+</tr>
+</div>
+</table>
+{% endfor %}
+</div>
+</body>
+</html>

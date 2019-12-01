@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+h2{
+	text-align: left;
+	font-size:40px;
+	color:white;
+	font-family:cursive;
+	padding-bottom: 1%;
+	padding-left: 2%;
+}
+h3{
+	font-size: 40px;
+	color: white;
+	font-family: cursive;
+	text-align:right;
+	padding-bottom:1%;
+	padding-right: 3%;
+}  
+h4{
+	font-size: 40px;
+	color:white;
+	font-family: monospace;
+	text-align: right;
+
+}
+.home-image{
+	position:absolute;
+	padding-left: 40%;
+	align-items: center;
+	height: 390px;
+	width: 400px;
+	top:200px;
+}
+body{
+	background-size:1550px;
+	background-repeat: no-repeat;
+}
+
+.lbutton{
+	position:absolute;
+	top: 92%;
+	left:40%;
+	transform: translate(-50%, -50%);
+}
+button{
+	font-family: cursive;
+	font-size:40px;
+	background:maroon;
+	color:#ccc;
+	width:240px;
+	height:80px;
+	border: 1px solid #338033;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+}
+
+button:focus{
+	outline: none;
+}
+
+button:before{
+	content:'';
+	display:block;
+	position: absolute;
+	background: rgba(255,255,255,.5);
+	width: 60px;
+	height: 100px;
+	left:0;
+	top:0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translateX(-130px) skewX(-15deg);
+}
+
+button.after{
+	content:'';
+	display:block;
+	position: absolute;
+	background:rgba(255,255,255,.2);
+	width: 30px;
+	height: 100%;
+	left: 30px;
+	top: 0px;
+	opacity: 0;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover{
+	background:gray;
+	cursor: pointer;
+
+}
+
+button:hover:before {
+	transform: translateX(300px) shewX(-15deg);
+	opacity: .6;
+	transition: .7s;
+}	
+
+button:hover:after {
+	transform: translateX(300px) skewX(-15deg);
+	opacity: 1;
+	transition: .7s;
+}
+
+.sbutton{
+	top:92%;
+	right:20%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+ 
+ .header{
+ 		width:100%;
+ 		height:80px;
+ 		display: block;
+ 		background-color:black;
+ 	
+ }
+ body{
+ 	background-color:gold;
+ }
+
+ .innerheader{
+ 	width:1000px;
+ 	height: 80%;
+ 	display: block;
+ 	margin: 0 auto; 
+ }
+
+ .logocontainer{
+ 	height: 100%;
+ 	display: table;
+ 	float:left;
+ }
+
+.logocontainer h1{
+	color:white;
+	height: 100%;
+	display: table-cell;
+	vertical-align:right;
+	font-size:60px;
+
+}
+.whole-page{
+	width:960px;
+	margin:0px auto;
+}
+
+@media screen and (max-width:959px){
+	.whole-page{
+		width:100%;
+	}
+	.home-image{
+		width:50%;
+	}
+}

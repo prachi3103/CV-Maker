@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV</title>
+	<link href="/static/css/search.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/cs/bootstrap.min.css">
+
+</head>
+<body bgcolor="antiquewhite">
+	<div class="search">
+
+		<div class="container">
+
+  <div class="jumbotron text-center">
+
+    <form method="post">
+
+      {% csrf_token %}
+      <div class="form-group">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+            	<h1>You Have successfully Created Your CV!</h1>
+            	<h2>Enter Your Full Name To Preview It</h2>
+              <input type="text" class="form-control" name="fullname" placeholder="Enter Fullname...">
+            </div>
+            <br>
+            <div class="col">
+              <button class="btn btn-primary" type="submit">Search!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</body>
+</html>
